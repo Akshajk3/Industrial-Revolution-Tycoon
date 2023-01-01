@@ -21,7 +21,7 @@ public class MachineManager : MonoBehaviour
 
     void Update()
     {
-        moneyText.text = money.ToString();
+        moneyText.text = ("$" + money.ToString());
     }
 
     public void AddProfits()

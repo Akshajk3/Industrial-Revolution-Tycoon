@@ -6,6 +6,6 @@ using UnityEngine;
 public class Dialogue : MonoBehaviour
 {
     public string Name;
-    [TextArea(10, 3)]
-    public Queue sentences;
+    [TextArea(3, 10)]
+    public string[] sentences;
 }
