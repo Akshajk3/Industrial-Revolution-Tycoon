@@ -14,18 +14,8 @@ public class MachineManager : MonoBehaviour
 
     private bool active;
 
-    void Start()
-    {
-        InvokeRepeating("AddProfits", moneyCDTime, moneyCDTime);
-    }
-
     void Update()
     {
         moneyText.text = ("$" + money.ToString());
-    }
-
-    public void AddProfits()
-    {
-        money += profits;
     }
 }

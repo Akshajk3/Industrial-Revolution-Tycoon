@@ -15,6 +15,13 @@ public class Mchine : MonoBehaviour
     {
         mc = this.GetComponentInParent<MachineManager>();
         mc.profits += value;
+        InvokeRepeating("GenerateMoney", spawnTimer, spawnTimer);
+    }
+
+    public void GenerateMoney()
+    {
+        Debug.Log("Added " + value + " from " + this.gameObject.name + " You willl become rich");
+        mc.money += value;
     }
 
 }

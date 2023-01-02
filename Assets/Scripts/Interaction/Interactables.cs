@@ -8,6 +8,8 @@ public class Interactables : MonoBehaviour
     public bool inRange;
     public KeyCode interactionKey = KeyCode.E;
     public UnityEvent interactionEvent;
+    public UnityEvent enterRangeEvent;
+    public UnityEvent exitRangeEvent;
     public LayerMask playerLayer;
     public SpriteRenderer GFX;
 
@@ -28,6 +30,7 @@ public class Interactables : MonoBehaviour
         if(collision.gameObject.CompareTag("Player"))
         {
             inRange = true;
+            enterRangeEvent.Invoke();
             GFX.color = Color.red;
         }
     }
@@ -37,6 +40,7 @@ public class Interactables : MonoBehaviour
         if(collision.gameObject.CompareTag("Player"))
         {
             inRange = false;
+            exitRangeEvent.Invoke();
             GFX.color = Color.white;
         }
     }

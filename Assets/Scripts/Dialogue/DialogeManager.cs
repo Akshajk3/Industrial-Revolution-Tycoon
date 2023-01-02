@@ -22,20 +22,20 @@ public class DialogeManager : MonoBehaviour
     {
         anim.SetBool("IsOpen", true);
 
-        nameText.text = name;
+        nameText.text = dialogue.name;
         sentences.Clear();
 
-        foreach(string sentence in dialogue.sentences)
+        foreach (string sentence in dialogue.sentences)
         {
             sentences.Enqueue(sentence);
         }
 
-        
+        DisplayNextSentence();
     }
 
     public void DisplayNextSentence()
     {
-        if(sentences.Count == 0)
+        if (sentences.Count == 0)
         {
             EndDialogue();
             return;
@@ -43,6 +43,7 @@ public class DialogeManager : MonoBehaviour
 
         string sentence = sentences.Dequeue();
         StopAllCoroutines();
+        StartCoroutine(TypeSentence(sentence));
 
     }
 
