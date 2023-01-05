@@ -7,7 +7,7 @@ public class MainMenuManager : MonoBehaviour
 {
     public void StartGame()
     {
-        SceneManager.LoadScene("Factory", LoadSceneMode.Single);
+        SceneManager.LoadScene("Cloth Room", LoadSceneMode.Single);
     }
 
     public void OpenCreadits()
