@@ -11,6 +11,9 @@ public class SpawnMachine : MonoBehaviour
     public GameObject machineManager;
     public TextMeshPro priceText;
     public float cost;
+    public int numWorkers = 2;
+    public WorkerManager wm;
+    public AstarPath AStar;
 
     private MachineManager mc;
     private DialogueTrigger dt;
@@ -46,6 +49,8 @@ public class SpawnMachine : MonoBehaviour
             Machine.transform.SetParent(machineManager.transform, false);
             Machine.transform.position = spawnLocation.position;
             Machine.name = machinePrefab.name;
+            wm.SpawnWorker(numWorkers);
+            AStar.Scan();
             Destroy();
             dt.TriggerDialogue();
         }

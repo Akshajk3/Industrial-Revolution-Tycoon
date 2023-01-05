@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Collector
+  - Worker
   layers:
   - Default
   - TransparentFX
@@ -14,8 +15,8 @@ TagManager:
   - UI
   - Player
   - Item
-  - 
-  - 
+  - Navmesh Obstacle
+  - Worker
   - 
   - 
   - 
@@ -42,9 +43,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Items
+  - name: Walls
+    uniqueID: 2224184607
+    locked: 0
+  - name: Interactables
     uniqueID: 4022100943
     locked: 0
   - name: Spawner
     uniqueID: 3780377497
+    locked: 0
+  - name: Workers
+    uniqueID: 111170269
+    locked: 0
+  - name: Player
+    uniqueID: 3161223051
     locked: 0
