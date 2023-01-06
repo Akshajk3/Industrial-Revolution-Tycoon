@@ -18,4 +18,16 @@ public class MachineManager : MonoBehaviour
     {
         moneyText.text = ("$" + money.ToString());
     }
+
+    public void SaveMoney()
+    {
+        SaveSystem.SaveMoney(this);
+    }
+
+    public void LoadMoney()
+    {
+        MoneyData data = SaveSystem.LoadMoney();
+
+        money = data.money;
+    }
 }
