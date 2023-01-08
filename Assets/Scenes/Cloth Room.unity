@@ -403,7 +403,7 @@ MonoBehaviour:
   spawnLocation: {fileID: 59565970}
   machineManager: {fileID: 2146206746}
   priceText: {fileID: 1867215472}
-  cost: 1000
+  cost: 2500
   numWorkers: 1
   AStar: {fileID: 1321770063}
   initialValue: 10
@@ -776,7 +776,7 @@ MonoBehaviour:
   spawnLocation: {fileID: 168552534}
   machineManager: {fileID: 2146206746}
   priceText: {fileID: 853908528}
-  cost: 150
+  cost: 200
   numWorkers: 1
   AStar: {fileID: 1321770063}
   initialValue: 4
@@ -7280,7 +7280,7 @@ MonoBehaviour:
   spawnLocation: {fileID: 1200971255}
   machineManager: {fileID: 2146206746}
   priceText: {fileID: 1729435274}
-  cost: 450
+  cost: 750
   numWorkers: 1
   AStar: {fileID: 1321770063}
   initialValue: 7
@@ -8595,7 +8595,7 @@ MonoBehaviour:
   spawnLocation: {fileID: 1505745012}
   machineManager: {fileID: 2146206746}
   priceText: {fileID: 1169212681}
-  cost: 50
+  cost: 70
   numWorkers: 1
   AStar: {fileID: 1321770063}
   initialValue: 2
@@ -8743,7 +8743,7 @@ MonoBehaviour:
   spawnLocation: {fileID: 1533684241}
   machineManager: {fileID: 2146206746}
   priceText: {fileID: 1990088160}
-  cost: 850
+  cost: 1900
   numWorkers: 1
   AStar: {fileID: 1321770063}
   initialValue: 9
@@ -9173,7 +9173,7 @@ MonoBehaviour:
   spawnLocation: {fileID: 1601310940}
   machineManager: {fileID: 2146206746}
   priceText: {fileID: 103647019}
-  cost: 300
+  cost: 500
   numWorkers: 1
   AStar: {fileID: 1321770063}
   initialValue: 5
@@ -9929,7 +9929,7 @@ MonoBehaviour:
   spawnLocation: {fileID: 1839569799}
   machineManager: {fileID: 2146206746}
   priceText: {fileID: 1069477509}
-  cost: 600
+  cost: 1000
   numWorkers: 1
   AStar: {fileID: 1321770063}
   initialValue: 8
