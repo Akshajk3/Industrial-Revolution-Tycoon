@@ -464,8 +464,8 @@ MonoBehaviour:
   dialogue:
     name: Spinning Jenny
     sentences:
-    - "However the Jenny became obsolete by the 1820\u2019s, since the more modern
-      spinning mule replaced it."
+    - "Like most machines of its time, the Spinning Jenny became obsolete by the
+      1820\u2019s, since the more modern Spinning Mule replaced it."
 --- !u!61 &59565974
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7341,8 +7341,8 @@ MonoBehaviour:
   dialogue:
     name: Spinning Jenny
     sentences:
-    - The Spinning Jenny was invented in 1764 and it allowed workers to more easily
-      weave cotton. This invention would revolutionize the cotton industry.
+    - Using the most common materials at the time, the Spinning Jenny was made from
+      a wooden and metal frame, with eight wooden spindles at one end.
 --- !u!61 &1200971259
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8804,8 +8804,8 @@ MonoBehaviour:
   dialogue:
     name: Spinning Jenny
     sentences:
-    - The Spinning Jenny was invented in 1764 and it allowed workers to more easily
-      weave cotton. This invention would revolutionize the cotton industry.
+    - Women workers depsised the Spinning Jenny, mainly due to it taking away their
+      jobs and decreasing the demand for manual labor.
 --- !u!61 &1533684245
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9234,8 +9234,8 @@ MonoBehaviour:
   dialogue:
     name: Spinning Jenny
     sentences:
-    - The Spinning Jenny was invented in 1764 and it allowed workers to more easily
-      weave cotton. This invention would revolutionize the cotton industry.
+    - With the speedy production of yarn and fabrics from the Spinning Jennys, the
+      ability to produce more clothing at a faster rate was also possible.
 --- !u!61 &1601310944
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9990,8 +9990,9 @@ MonoBehaviour:
   dialogue:
     name: Spinning Jenny
     sentences:
-    - The Spinning Jenny was invented in 1764 and it allowed workers to more easily
-      weave cotton. This invention would revolutionize the cotton industry.
+    - A negative effect of the Spinning Jenny arriving to the textile industry was
+      an increase in demand for slaves, mainly so that the supply chain wouldn't
+      be disrupted.
 --- !u!61 &1839569803
 BoxCollider2D:
   m_ObjectHideFlags: 0
