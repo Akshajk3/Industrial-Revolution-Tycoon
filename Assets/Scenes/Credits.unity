@@ -278,7 +278,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 244.5, y: 67}
+  m_AnchoredPosition: {x: 244.5, y: 80.82}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &145076855
@@ -973,11 +973,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Character Art: forestSprites by analogStudios\r\n\nTilemap: Pixel Crawlers
-    by Anokolisa\r\n\nFont: Public Pixel Font by GGBotNet \r\n\nMusic Used:\r\n\nHandel
-    - Water Music (Minousoft 8-Bit Remix)\r\n\n8-Bit Dance of the Reed Flutes/Pipes
-    by Anne Good\r\n\n8-Bit Don Giovanni - Non ti Fidar by thesir27\r\n\nWall Street
-    Rag 8-Bit by hewds\r\nSunflower Slow Drag 8-Bit by hewds\r\n"
+  m_text: "Character Art: MODIFIED forestSprites by analogStudios\r\n\nTilemap: MODIFIED
+    Pixel Crawlers by Anokolisa\r\n\nFont: Public Pixel Font by GGBotNet \r\n\nMusic
+    Used:\r\n\n- Handel - Water Music (Minousoft 8-Bit Remix)\r\n\n- 8-Bit Dance
+    of the Reed Flutes/Pipes by Anne Good\r\n\n- 8-Bit Don Giovanni - Non ti Fidar
+    by thesir27\r\n\n- Wall Street Rag 8-Bit by hewds\r\n\n- Sunflower Slow Drag
+    8-Bit by hewds\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e3de46ad92739e74993a4a14465fb70a, type: 2}
   m_sharedMaterial: {fileID: 7055325474790765514, guid: e3de46ad92739e74993a4a14465fb70a, type: 2}
