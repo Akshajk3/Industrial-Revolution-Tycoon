@@ -10,7 +10,7 @@ public class SpawnMachine : MonoBehaviour
     public Transform spawnLocation;
     public GameObject machineManager;
     public TextMeshPro priceText;
-    public float cost;
+    public int cost;
     public int numWorkers = 2;
     //public WorkerManager wm;
     public AstarPath AStar;
@@ -25,7 +25,7 @@ public class SpawnMachine : MonoBehaviour
     {
         mc = machineManager.GetComponent<MachineManager>();
         dt = GetComponent<DialogueTrigger>();
-        priceText.text = ("$" + cost.ToString());
+        priceText.text = ("Cost: " + "$" + cost.ToString() + "\n" + "Value: " + "$" + initialValue.ToString());
         priceText.gameObject.SetActive(false);
     }
 
@@ -39,6 +39,7 @@ public class SpawnMachine : MonoBehaviour
         {
             priceText.color = Color.red;
         }
+
     }
 
     public void Spawn()

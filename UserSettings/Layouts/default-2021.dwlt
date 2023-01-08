@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 2560
     height: 1349.3334
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Console
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 60
+  controlID: 112
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -68,8 +68,8 @@ MonoBehaviour:
     y: 0
     width: 595.3334
     height: 1299.3334
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -111,7 +111,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
+  m_Name: ConsoleWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -120,15 +120,15 @@ MonoBehaviour:
     y: 770
     width: 1964.6666
     height: 529.3334
-  m_MinSize: {x: 231, y: 271}
-  m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 15}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 15}
   - {fileID: 19}
   - {fileID: 14}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -604,6 +604,7 @@ MonoBehaviour:
     - {fileID: -4963288632689426582, guid: a942c319da2e1f24c8966b82f8c9ca78, type: 2}
     - {fileID: 489834361327744127, guid: acf67d5b061269043a7c5e3feaef9305, type: 2}
     - {fileID: 1229145591558691178, guid: 8458de079748765479206371a7737393, type: 2}
+    - {fileID: -8531094010317899183, guid: 45706876d6aa58c4794d56f0d3e20f37, type: 2}
     m_ValueSerializationHelper:
     - e00: 0.85
       e01: 0
@@ -624,11 +625,11 @@ MonoBehaviour:
     - e00: 1
       e01: 0
       e02: 0
-      e03: 0
+      e03: 257.99997
       e10: 0
       e11: 1
       e12: 0
-      e13: 0
+      e13: 106
       e20: 0
       e21: 0
       e22: 1
@@ -669,10 +670,26 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
+    - e00: 1
+      e01: 0
+      e02: 0
+      e03: 129.66663
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 262
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: a942c319da2e1f24c8966b82f8c9ca78, type: 2}
+  m_AnimatorController: {fileID: 9100000, guid: 45706876d6aa58c4794d56f0d3e20f37, type: 2}
   m_BreadCrumbs:
-  - m_Target: {fileID: -4963288632689426582, guid: a942c319da2e1f24c8966b82f8c9ca78, type: 2}
+  - m_Target: {fileID: -8531094010317899183, guid: 45706876d6aa58c4794d56f0d3e20f37, type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
   stateMachineGraphGUI: {fileID: 0}
@@ -715,7 +732,7 @@ MonoBehaviour:
     m_SaveData: []
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 150944
+  m_LastSelectedObjectID: -146994
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -757,22 +774,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Scripts/Menus
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Scripts/Menus
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Kanumuri\Documents\GitHub\Industrial Revolution Tycoon
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: 20750000
-    m_LastClickedID: 29984
-    m_ExpandedIDs: 00000000e0740000e2740000e4740000e6740000e874000000ca9a3b
+    m_SelectedIDs: 70750000
+    m_LastClickedID: 30064
+    m_ExpandedIDs: 00000000227500002475000026750000287500002a75000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -800,7 +817,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000e0740000e2740000e4740000e6740000e8740000
+    m_ExpandedIDs: 00000000227500002475000026750000287500002a750000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -827,7 +844,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000346700009cb60000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -930,7 +947,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: f629f8ffcc2bf8ff702cf8ff462ff8ff6c30f8ff8830f8ff9830f8ff9a31f8ffcc50f8ffb47cfaff6081faff8a96faffeaaffaffcac3faffcc25ffffce25ffffd025fffffc29ffff2a2cffff722effff0cfbffffe26e0000e86e0000fe6e0000846f0000907000009ca80100cea80100daa901001c6d0200
+      m_ExpandedIDs: 08e6fffface6ffff72eaffff8aeaffff98eaffff0cfbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1234,9 +1251,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 852.592, y: 560.2933, z: 13.258446}
+    m_Target: {x: 1.660944, y: 0.18552501, z: -0.08710012}
     speed: 2
-    m_Value: {x: 852.592, y: 560.2933, z: 13.258446}
+    m_Value: {x: 1.660944, y: 0.18552501, z: -0.08710012}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1287,9 +1304,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 694.9094
+    m_Target: 6.9772797
     speed: 2
-    m_Value: 694.9094
+    m_Value: 6.9772797
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1307,7 +1324,7 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 1
     m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: -0.10362113, y: -0.009848311, z: 0.001043347, w: -0.99459904}
+  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 

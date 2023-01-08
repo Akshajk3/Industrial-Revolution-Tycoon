@@ -9,10 +9,13 @@ public class PauseMenu : MonoBehaviour
 {
     public KeyCode pauseButton = KeyCode.Escape;
     public GameObject pauseMenu;
+    public GameObject endGameMenu;
+    bool gameEnded;
 
     void Start()
     {
         pauseMenu.SetActive(false);
+        endGameMenu.SetActive(false);
     }
 
     void Update()
@@ -32,9 +35,12 @@ public class PauseMenu : MonoBehaviour
 
     public void Pause()
     {
-        pauseMenu.SetActive(true);
+        if (gameEnded == false)
+        {
+            pauseMenu.SetActive(true);
 
-        Time.timeScale = 0.0f;
+            Time.timeScale = 0.0f;
+        }
     }
 
     public void Resume()
@@ -43,9 +49,18 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1.0f;
     }
 
-    public void Settings()
+    public void EndGame()
     {
+        endGameMenu.SetActive(true);
+        gameEnded = true;
+        Time.timeScale = 0.0f;
+    }
 
+    public void Continue()
+    {
+        endGameMenu.SetActive(false);
+        gameEnded = false;
+        Time.timeScale = 1.0f;
     }
 
     public void MainMenu()

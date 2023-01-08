@@ -23,10 +23,10 @@ public class Mchine : MonoBehaviour
 
     public AudioSource upgradeSFX;
 
-    public float spawnCost;
+    public int spawnCost;
 
-    public float upgradePrice;
-    public float upgradeMultiplier;
+    public int upgradePrice;
+    public int upgradeMultiplier;
 
     public float teirCounter = 0;
 
@@ -56,14 +56,12 @@ public class Mchine : MonoBehaviour
             priceText.color = Color.red;
         }
 
-        if(teirCounter < maxTeirs)
-        {
-            priceText.gameObject.SetActive(true);
-        }
-        else
+        if(teirCounter >= maxTeirs)
         {
             priceText.gameObject.SetActive(false);
         }
+
+        priceText.text = "Upgrade: " + "$" + upgradePrice.ToString() + "\n" + "Profit: " + "$" + (value + addValue).ToString();
         
     }
 
