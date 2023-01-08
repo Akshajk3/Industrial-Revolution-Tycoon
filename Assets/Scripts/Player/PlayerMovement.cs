@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     private bool isMoving;
 
     private Vector2 movement;
+    public bool paused;
 
     void Start()
     {
@@ -37,11 +38,11 @@ public class PlayerMovement : MonoBehaviour
             isMoving = false;
         }
 
-        if(movement.x < 0)
+        if(movement.x < 0 && paused == false)
         {
             transform.localScale = new Vector3(-scale, transform.localScale.y, transform.localScale.z);
         }
-        else if(movement.x > 0)
+        else if(movement.x > 0 && paused == false)
         {
             transform.localScale = new Vector3(scale, transform.localScale.y, transform.localScale.z);
         }

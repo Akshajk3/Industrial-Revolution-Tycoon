@@ -10,6 +10,7 @@ public class PauseMenu : MonoBehaviour
     public KeyCode pauseButton = KeyCode.Escape;
     public GameObject pauseMenu;
     public GameObject endGameMenu;
+    public PlayerMovement player;
     bool gameEnded;
 
     void Start()
@@ -38,7 +39,7 @@ public class PauseMenu : MonoBehaviour
         if (gameEnded == false)
         {
             pauseMenu.SetActive(true);
-
+            player.paused = true;
             Time.timeScale = 0.0f;
         }
     }
@@ -46,6 +47,7 @@ public class PauseMenu : MonoBehaviour
     public void Resume()
     {
         pauseMenu.SetActive(false);
+        player.paused = false;
         Time.timeScale = 1.0f;
     }
 

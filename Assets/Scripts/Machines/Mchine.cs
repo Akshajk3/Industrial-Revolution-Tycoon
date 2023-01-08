@@ -61,7 +61,7 @@ public class Mchine : MonoBehaviour
             priceText.gameObject.SetActive(false);
         }
 
-        priceText.text = "Upgrade: " + "$" + upgradePrice.ToString() + "\n" + "Profit: " + "$" + (value + addValue).ToString();
+        priceText.text = "Upgrade: " + "$" + upgradePrice.ToString() + "\n" + "New Profit: " + "$" + (value + addValue).ToString();
         
     }
 
