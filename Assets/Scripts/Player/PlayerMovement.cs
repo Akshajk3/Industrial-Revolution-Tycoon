@@ -10,7 +10,16 @@ public class PlayerMovement : MonoBehaviour
     public Animator anim;
     public float scale = 7;
 
+    private AudioSource audioSource;
+
+    private bool isMoving;
+
     private Vector2 movement;
+
+    void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
 
     void Update()
     {
@@ -20,10 +29,12 @@ public class PlayerMovement : MonoBehaviour
         if(movement != new Vector2(0, 0))
         {
             anim.SetBool("IsWalking", true);
+            isMoving = true;
         }
         else
         {
             anim.SetBool("IsWalking", false);
+            isMoving = false;
         }
 
         if(movement.x < 0)
@@ -35,28 +46,23 @@ public class PlayerMovement : MonoBehaviour
             transform.localScale = new Vector3(scale, transform.localScale.y, transform.localScale.z);
         }
 
+        if(isMoving)
+        {
+            if(!audioSource.isPlaying)
+            {
+                audioSource.Play();
+            }
+        }
+        else
+        {
+            audioSource.Stop();
+        }
+
     }
 
     void FixedUpdate()
     {
         movement = movement.normalized;
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
-    }
-
-    public void SavePlayer()
-    {
-        SaveSystem.SavePlayer(this);
-    }
-
-    public void LoadPlayer()
-    {
-        PlayerData data = SaveSystem.LoadPlayer();
-
-        Vector2 position;
-
-        position.x = data.position[0];
-        position.y = data.position[1];
-
-        transform.position = position;
     }
 }

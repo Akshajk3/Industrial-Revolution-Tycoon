@@ -12,6 +12,7 @@ public class Interactables : MonoBehaviour
     public UnityEvent exitRangeEvent;
     public LayerMask playerLayer;
     public SpriteRenderer GFX;
+    public bool ChangeColor = true;
 
     void Update()
     {
@@ -31,7 +32,10 @@ public class Interactables : MonoBehaviour
         {
             inRange = true;
             enterRangeEvent.Invoke();
-            GFX.color = Color.red;
+            if(ChangeColor == true)
+            {
+                GFX.color = Color.red;
+            }
         }
     }
 
@@ -41,7 +45,10 @@ public class Interactables : MonoBehaviour
         {
             inRange = false;
             exitRangeEvent.Invoke();
-            GFX.color = Color.white;
+            if (ChangeColor == true)
+            {
+                GFX.color = Color.white;
+            }
         }
     }
 }

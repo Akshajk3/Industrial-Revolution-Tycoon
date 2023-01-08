@@ -52,9 +52,18 @@ TagManager:
   - name: Spawner
     uniqueID: 3780377497
     locked: 0
+  - name: Props
+    uniqueID: 3043543293
+    locked: 0
+  - name: Secondary Props
+    uniqueID: 3263432011
+    locked: 0
   - name: Workers
     uniqueID: 111170269
     locked: 0
   - name: Player
     uniqueID: 3161223051
+    locked: 0
+  - name: Cdles
+    uniqueID: 1425510389
     locked: 0

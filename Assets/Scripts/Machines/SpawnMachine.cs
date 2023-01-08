@@ -12,8 +12,9 @@ public class SpawnMachine : MonoBehaviour
     public TextMeshPro priceText;
     public float cost;
     public int numWorkers = 2;
-    public WorkerManager wm;
+    //public WorkerManager wm;
     public AstarPath AStar;
+    public float initialValue;
 
     private MachineManager mc;
     private DialogueTrigger dt;
@@ -46,10 +47,13 @@ public class SpawnMachine : MonoBehaviour
         {
             mc.money -= cost;
             GameObject Machine = Instantiate(machinePrefab, spawnLocation) as GameObject;
+            Machine.GetComponent<Mchine>().spawnCost = cost;
+            Machine.GetComponent<Mchine>().value = initialValue;
+
             Machine.transform.SetParent(machineManager.transform, false);
             Machine.transform.position = spawnLocation.position;
             Machine.name = machinePrefab.name;
-            wm.SpawnWorker(numWorkers);
+            //wm.SpawnWorker(numWorkers);
             AStar.Scan();
             Destroy();
             dt.TriggerDialogue();
